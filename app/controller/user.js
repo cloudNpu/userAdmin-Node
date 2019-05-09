@@ -48,6 +48,18 @@ class UserController extends Controller {
             ctx.status = 400;
         }
     }
+
+    async login() {
+        const {ctx} = this;
+        const username = ctx.request.body.username;
+        const password = ctx.request.body.password;
+
+        if(username === 'admin' && password === 'admin') {
+            ctx.status = 200;
+        } else {
+            ctx.status = 400;
+        }
+    }
 }
 
 module.exports = UserController;

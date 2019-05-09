@@ -35,4 +35,5 @@ module.exports = app => {
     router.put('/users/:id', controller.user.update);
     router.delete('/users/:id', controller.user.delete);
     router.get('/types', controller.type.findAll);
+    router.post('/login', controller.user.login);
 };
