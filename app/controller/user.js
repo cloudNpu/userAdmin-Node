@@ -60,6 +60,7 @@ class UserController extends Controller {
             ctx.status = 400;
         }
     }
+    
 }
 
 module.exports = UserController;
