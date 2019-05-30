@@ -9,22 +9,22 @@ export default {
   },
 
   effects: {
-    *fetch(_, { call, put }) {
-      const response = yield call(queryUsers);
-      yield put({
-        type: 'save',
-        payload: response,
-      });
-    },
-    *fetchCurrent(_, { call, put }) {
-      const response = yield call(queryCurrent);
-     // console.log(response);
-      yield put({
-        type: 'saveCurrentUser',
-        payload: response,
-      });
-    },
-  },
+    // *fetch(_, { call, put }) {
+    //   const response = yield call(queryUsers);
+    //   yield put({
+    //     type: 'save',
+    //     payload: response,
+    //   });
+    // },
+  //   *fetchCurrent(_, { call, put }) {
+  //     const response = yield call(queryCurrent);
+  //    // console.log(response);
+  //     yield put({
+  //       type: 'saveCurrentUser',
+  //       payload: response,
+  //     });
+  //   },
+   },
 
   reducers: {
     save(state, action) {
