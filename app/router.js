@@ -16,10 +16,11 @@ const client = new Eureka({
             name: 'MyOwn',
         },
         inputParams: "{\"a\":\"int\"}",
-        outputParams: "String"
+        outputParams: "String",
+        userId:1
     },
     eureka: {
-        host: 'localhost',
+        host: '10.69.34.61',
         port: 8080,
         servicePath: '/cloud/apps/'
     }
