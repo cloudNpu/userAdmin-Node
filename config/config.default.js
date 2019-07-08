@@ -28,6 +28,6 @@ exports.security = {
 exports.cluster = {
     listen: {
         port: 7001,
-        hostname: '127.0.0.1',
+        hostname: '10.27.235.233',
     },
 };
